@@ -1,77 +1,217 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>کافی‌نت آنلاین نتینو</title>
+
 <style>
-body{font-family:Tahoma,Arial;background:#f1f5f9;color:#172554;margin:0}
-header{background:#123b70;color:white;text-align:center;padding:28px 12px}
-main{max-width:650px;margin:20px auto;padding:15px}
-.card{background:white;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 3px 12px #0001}
-h2{color:#1261a0}
-button{background:#087e8b;color:white;border:0;border-radius:8px;padding:12px;cursor:pointer}
-input,select,textarea{box-sizing:border-box;width:100%;padding:12px;margin:7px 0 14px;border:1px solid #cbd5e1;border-radius:8px}
-a{color:#087e8b}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172554;
+  line-height: 1.9;
+}
+
+header {
+  background: linear-gradient(135deg, #123b70, #087e8b);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+h2 {
+  color: #1261a0;
+  margin-top: 0;
+}
+
+.service {
+  background: #f0fdfa;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 18px;
+  background: #087e8b;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #065f68;
+}
+
+.note {
+  color: #475569;
+  font-size: 13px;
+}
+
+.contact {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #087e8b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>💻 کافی‌نت آنلاین نتینو</h1>
-<p>تمام خدمات اینترنتی، سریع و مطمئن</p>
+  <h1>💻 کافی‌نت آنلاین نتینو</h1>
+  <p>تمام خدمات اینترنتی، سریع و مطمئن</p>
 </header>
+
 <main>
-<section class="card">
-<h2>خدمات نتینو</h2>
-<p>📝 ثبت‌نام‌های اینترنتی</p>
-<p>🏫 ثبت‌نام مدارس و دانشگاه</p>
-<p>💳 خدمات بانکی و پرداخت قبوض</p>
-<p>🖨️ چاپ و اسکن مدارک</p>
-<p>📁 ارسال فایل برای چاپ</p>
-</section>
-<section class="card">
-<h2>ثبت سفارش</h2>
-<form id="orderForm">
-<label>نام و نام خانوادگی</label>
-<input id="name" required minlength="2" placeholder="نام شما">
-<label>شماره تماس</label>
-<input id="phone" required type="tel" placeholder="شماره تماس">
-<label>نوع خدمت</label>
-<select id="service">
-<option>ثبت‌نام اینترنتی</option>
-<option>ثبت‌نام مدارس و دانشگاه</option>
-<option>پرداخت قبض</option>
-<option>چاپ و اسکن</option>
-<option>سایر خدمات اینترنتی</option>
-</select>
-<label>توضیحات سفارش</label>
-<textarea id="details" rows="3" placeholder="توضیحات یا تعداد صفحات"></textarea>
-<button type="submit">ثبت سفارش</button>
-</form>
-<p id="result"></p>
-</section>
-<section class="card">
-<h2>تماس با نتینو</h2>
-<p>برای پیگیری سفارش خود، از طریق بازوی نتینو پیام بدهید.</p>
-<p><a href="https://ble.ir/khabar_tekab1">ارتباط در بله</a></p>
-</section>
+
+  <section class="card">
+    <h2>خدمات نتینو</h2>
+    <div class="service">📝 ثبت‌نام‌های اینترنتی</div>
+    <div class="service">🏫 ثبت‌نام مدارس و دانشگاه</div>
+    <div class="service">📋 ثبت‌نام آزمون‌ها و استخدامی</div>
+    <div class="service">💳 پرداخت قبوض و خدمات بانکی</div>
+    <div class="service">🖨️ چاپ و اسکن مدارک</div>
+    <div class="service">📁 سایر خدمات اینترنتی</div>
+  </section>
+
+  <section class="card">
+    <h2>ثبت سفارش</h2>
+
+    <form id="orderForm">
+      <label for="name">نام و نام خانوادگی *</label>
+      <input id="name" required minlength="2"
+             placeholder="نام خود را وارد کنید">
+
+      <label for="phone">شماره تماس *</label>
+      <input id="phone" required type="tel"
+             placeholder="شماره تماس">
+
+      <label for="service">نوع خدمت *</label>
+      <select id="service" required>
+        <option value="ثبت‌نام اینترنتی">ثبت‌نام اینترنتی</option>
+        <option value="ثبت‌نام مدارس و دانشگاه">ثبت‌نام مدارس و دانشگاه</option>
+        <option value="ثبت‌نام آزمون‌ها و استخدامی">ثبت‌نام آزمون‌ها و استخدامی</option>
+        <option value="پرداخت قبوض">پرداخت قبوض</option>
+        <option value="چاپ و اسکن">چاپ و اسکن</option>
+        <option value="سایر خدمات اینترنتی">سایر خدمات اینترنتی</option>
+      </select>
+
+      <label for="details">توضیحات سفارش</label>
+      <textarea id="details" rows="4"
+                placeholder="توضیحات یا تعداد صفحات را بنویسید"></textarea>
+
+      <button type="submit">ثبت سفارش</button>
+      <p id="result" role="status"></p>
+    </form>
+
+    <p class="note">
+      توجه: این نسخه سفارش را فقط در مرورگر همین دستگاه ذخیره می‌کند
+      و سفارش را مستقیماً برای مدیر ارسال نمی‌کند.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>ارتباط با نتینو</h2>
+    <p>برای پیگیری خدمات و سفارش‌های خود با ما در ارتباط باشید.</p>
+    <a class="contact"
+       href="https://ble.ir/khabar_tekab1"
+       target="_blank" rel="noopener">
+       ارتباط در بله
+    </a>
+  </section>
+
 </main>
+
+<footer>
+  کافی‌نت آنلاین نتینو
+</footer>
+
 <script>
-document.getElementById('orderForm').addEventListener('submit',function(e){
-e.preventDefault();
-const order={
-name:document.getElementById('name').value,
-phone:document.getElementById('phone').value,
-service:document.getElementById('service').value,
-details:document.getElementById('details').value
-};
-const orders=JSON.parse(localStorage.getItem('netinoOrders')||'[]');
-orders.push(order);
-localStorage.setItem('netinoOrders',JSON.stringify(orders));
-document.getElementById('result').textContent='سفارش در همین مرورگر ذخیره شد. برای نهایی‌کردن سفارش، با نتینو تماس بگیرید.';
-this.reset();
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const order = {
+    name: document.getElementById("name").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    service: document.getElementById("service").value,
+    details: document.getElementById("details").value.trim(),
+    date: new Date().toLocaleString("fa-IR")
+  };
+
+  try {
+    const orders = JSON.parse(
+      localStorage.getItem("netinoOrders") || "[]"
+    );
+
+    orders.push(order);
+    localStorage.setItem("netinoOrders", JSON.stringify(orders));
+
+    document.getElementById("result").textContent =
+      "اطلاعات سفارش در همین مرورگر ذخیره شد. برای نهایی کردن سفارش با نتینو تماس بگیرید.";
+
+    this.reset();
+  } catch (error) {
+    document.getElementById("result").textContent =
+      "ذخیره سفارش انجام نشد. لطفاً دوباره تلاش کنید.";
+  }
 });
 </script>
+
 </body>
 </html>
